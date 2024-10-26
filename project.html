@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISMAIL</title>
+    <script src="https://kit.fontawesome.com/2907f46a6d.js" crossorigin="anonymous"></script>
+
+    <script>
+      function Valider(event) {
+          event.preventDefault();
+
+          const nom = document.querySelector('input[type="text"]').value;
+          const email = document.querySelector('input[type="email"]').value;
+
+          if (!nom) {
+              alert("Le champ 'Nom' ne peut pas être vide.");
+              return;
+          }
+
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+              alert("Veuillez entrer une adresse e-mail valide.");
+              return;
+          }
+
+          alert("Message envoyé avec succès !");
+      }
+  </script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ismail Faida</h1><hr>
+
+    <h2>A propos de moi:</h2>
+
+    <p>Je suis Ismail Faida Etudiant a l'emsi , dés mon jeune âge j'étais fasciner par l'informatique 
+      les langages de programmation . 
+      Je suis une personne cooperative pas asser nerveuse et j'essai toujours de décortiquer
+      n'importe quel probléme qui se presente devant moi pour pouvoir trouver la bonne solution .
+    </p><hr>
+     
+    <h2> Mes loisirs:</h2>
+    <ul>
+    <li> Jeux video (online) .</li>
+    <li> Faire du Sports et plus precisemment football .</li>
+    <li>Regarder des series . </li>
+    </ul><hr>
+     
+    <h2> 1-Mes objectifs academiques:</h2>  
+    <ol>
+    <li>Aquerir des competences en frontend et backend pour pouvoir être un fullstack développeur.</li>
+    <li>Avoir la possibilite de resoudre n'importe quel probléme avec la solution la plus facile.</li>
+    <li>Suivre une formation professionnelle pour acquérir de nouvelles compétences d'ici la fin de l'année.</li>
+    </ol>
+    <h2> 2-Mes objectifs personnels:</h2>
+    <ol>
+    <li>Passer plus de temps avec la famille et les amis</li>
+    <li>Mettre en place une routine quotidienne pour mieux gérer mes tâches et réduire le stress.</li>
+    </ol><hr>
+    <table>
+      <tr>
+          <th>Nom</th>
+          <th>Âge</th>
+          <th>Ville</th>
+          <th>Profile</th>
+      </tr>
+      <tr>
+          <td>Karrach Mohamed Reda</td>
+          <td>19</td>
+          <td>Casablanca</td>
+          <td><a href="https://www.instagram.com/reda.krc_/">Instagram</a></td> 
+      </tr>
+      <tr>
+          <td>Norri Yahya</td>
+          <td>19</td>
+          <td>Casablanca</td>
+          <td><a href="https://www.instagram.com/yahya_norri/">Instagram</a></td> 
+      </tr>
+      <tr>
+          <td>Sara Bellali</td>
+          <td>20</td>
+          <td>Casablanca</td>
+          <td><a href="https://www.instagram.com/sara__blly?igsh=MTdkMmcwZ2Z1YTk2cQ==">Instagram</a></td> 
+      </tr>
+  </table>
+<hr>
+    <h2>Pour me contacter:</h2>
+    <ul>
+    <li> Numero de telephone:<span><u>0601923185</u></span></li>
+    <li>Email:<span><u>ismailfaida7@gmail.com</u></span></li>
+    </ul>
+    <form onsubmit="Valider(event)">
+      <label for="nom">Nom</label><br>
+      <input type="text" required placeholder="Votre nom"><br>
+      <label for="email">Email</label><br>
+      <input type="email" required placeholder="Exemple@exemple.com"><br>
+      <label for="message">Message</label><br>
+      <textarea name="message"></textarea><br>
+      <button style="background-color: green;" type="submit" class="btn-envoyer">Envoyer</button>
+  </form>
+        <i style="font-size: 40px;"class="fa-solid fa-envelope"></i>
+        </a>  
+        <i  style="font-size: 40px;"class="fa-brands fa-instagram"></i>  
+        
+</body>
+</html>
